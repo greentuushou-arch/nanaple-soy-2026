@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>腕時計のななぷれへ応援よろしくお願いします｜ショップ・オブ・ザ・イヤー2026 投票受付中</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ロゴの青と看板の水色を軸に、黄色とピンクでにぎやかに */
+  --blue:#0a6ad6;
+  --blue-d:#0a4a9e;
+  --navy:#0b2a5c;
+  --aqua:#36c5e6;
+  --aqua-l:#dff6fc;
+  --yellow:#ffd23f;
+  --yellow-d:#e8a800;
+  --pink:#ff4f8b;
+  --paper:#f4fbfe;
+  --ink:#10223f;
+  --ink-2:#4f6079;
+  --line:rgba(16,34,63,.12);
+  --sans:"Noto Sans JP",sans-serif;
+  --en:"Jost","Noto Sans JP",sans-serif;
+  --yellow-grad:linear-gradient(180deg,#ffe57a 0%,#ffd23f 50%,#ffbf1a 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--blue-d);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.9;letter-spacing:.04em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:750px;margin:0 auto;background:var(--paper);overflow:hidden;padding-bottom:88px}
+.in{padding:0 20px}
+.en{font-family:var(--en)}
+
+/* ---------- 共通見出し ---------- */
+.head{text-align:center;margin-bottom:38px}
+.tag{display:inline-block;font-family:var(--en);font-weight:600;font-size:16px;letter-spacing:.2em;color:#fff;background:var(--blue);padding:3px 16px 3px 19px;border-radius:999px}
+.head h2{font-weight:900;font-size:clamp(26px,7.6vw,38px);line-height:1.45;letter-spacing:.04em;margin-top:14px}
+.head h2 .mk{background:linear-gradient(transparent 62%,var(--yellow) 62%);padding:0 .08em}
+.head .lead{margin-top:14px;font-size:18px;color:var(--ink-2)}
+
+/* ---------- 流れる帯 ---------- */
+.ticker{position:relative;z-index:5;background:var(--yellow);color:var(--navy);overflow:hidden;white-space:nowrap;border-top:3px solid var(--navy);border-bottom:3px solid var(--navy)}
+.ticker .row{display:inline-flex;animation:tick 22s linear infinite}
+.ticker span{font-family:var(--en);font-weight:700;font-size:20px;letter-spacing:.12em;padding:8px 0;line-height:1.4}
+.ticker span::after{content:"★";color:var(--pink);margin:0 18px}
+.ticker.rev{background:var(--navy);color:#fff;border-color:var(--yellow)}
+.ticker.rev .row{animation-direction:reverse}
+.ticker.rev span::after{color:var(--yellow)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- 投票ボタン（黄色・シャイン） ---------- */
+.vote{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:560px;min-height:80px;margin:0 auto;padding:0 14px;border-radius:999px;background:var(--yellow-grad);color:var(--navy);font-weight:900;font-size:clamp(17px,5vw,23px);letter-spacing:.04em;white-space:nowrap;border:3px solid var(--navy);box-shadow:0 6px 0 var(--navy),0 14px 26px rgba(0,0,0,.25);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.vote:active{transform:translateY(4px);box-shadow:0 2px 0 var(--navy)}
+.vote .arw{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--pink);color:#fff;font-size:14px;flex:none}
+.vote::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);pointer-events:none}
+.vote.np-shine-play::after{animation:shine 1.5s ease-in-out}
+@keyframes shine{to{left:130%}}
+.vote-note{text-align:center;font-size:17px;color:var(--ink-2);margin-top:16px;line-height:1.7}
+
+/* ---------- 背景の放射線と、上から降る紙吹雪 ---------- */
+.sun{position:relative;color:#fff;overflow:hidden;background:repeating-conic-gradient(from 0deg at 50% 34%,rgba(255,255,255,.09) 0deg 7deg,transparent 7deg 14deg),radial-gradient(90% 55% at 50% 34%,#3b9bff 0%,#0a6ad6 48%,#0a4a9e 100%)}
+.confetti{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.confetti i{position:absolute;top:-20px;width:var(--w,8px);height:var(--h,14px);background:var(--c);border-radius:2px;opacity:.95;animation:fall linear infinite}
+@keyframes fall{0%{transform:translate(0,0) rotate(0) rotateY(0)}100%{transform:translate(var(--dx,30px),var(--fall,1200px)) rotate(var(--r,540deg)) rotateY(720deg)}}
+
+/* ---------- FV ---------- */
+.fv-bar{position:relative;z-index:3;text-align:center;padding:26px 20px 0}
+.fv-bar a{display:inline-block}
+.fv-bar img{width:150px;margin:0 auto;filter:drop-shadow(0 4px 10px rgba(0,0,0,.18))}
+.fv-head{position:relative;z-index:3;text-align:center;padding:16px 10px 0}
+.soy{display:inline-block;font-family:var(--en);font-weight:600;font-size:clamp(14px,4vw,21px);letter-spacing:.22em;padding:4px 16px 4px 20px;border:2px solid #fff;border-radius:999px;white-space:nowrap}
+.soy-big{display:block;margin-top:12px;font-family:var(--en);font-weight:700;font-size:clamp(30px,8.8vw,64px);line-height:1;letter-spacing:.01em;white-space:nowrap;text-shadow:0 4px 0 var(--navy)}
+.year{display:block;font-family:var(--en);font-weight:700;font-size:clamp(84px,27vw,180px);line-height:.95;letter-spacing:.02em;color:var(--yellow);text-shadow:0 6px 0 var(--navy),0 14px 30px rgba(0,0,0,.25)}
+.fv-title{display:inline-block;margin-top:14px;white-space:nowrap;font-weight:900;font-size:clamp(28px,8vw,48px);line-height:1.2;letter-spacing:.1em;padding:8px 22px 10px 30px;background:var(--pink);border-radius:12px;box-shadow:0 5px 0 #c42263}
+.fv-dl{display:block;margin-top:16px;font-size:clamp(16px,4.6vw,22px);font-weight:900;letter-spacing:.02em;white-space:nowrap}
+.fv-dl b{font-family:var(--en);font-weight:700;font-size:1.7em;line-height:1;color:var(--yellow);margin:0 .08em}
+.fv-pts{position:relative;z-index:3;padding:26px 18px 0}
+.fv-pt{position:relative;background:#fff;color:var(--ink);border:3px solid var(--navy);border-radius:20px;padding:30px 10px 18px;text-align:center;line-height:1.5;letter-spacing:0;box-shadow:0 8px 0 var(--navy)}
+.fv-pt .l1{position:absolute;left:50%;top:-20px;transform:translateX(-50%);white-space:nowrap;background:var(--yellow);color:var(--navy);border:3px solid var(--navy);border-radius:999px;padding:2px 16px;font-size:clamp(13px,3.9vw,19px);font-weight:900}
+.fv-pt .l2{white-space:nowrap;font-size:clamp(15px,4.4vw,20px);font-weight:700}
+.fv-pt .l3{font-weight:900;font-size:clamp(24px,7vw,38px);line-height:1.35;margin-top:6px}
+.fv-pt .l3 .w{display:block;white-space:nowrap}
+.fv-pt .l3 .p{font-family:var(--en);font-weight:700;font-size:1.45em;line-height:1;color:var(--pink);letter-spacing:.01em}
+.fv-pt .l3 .p small{font-family:var(--sans);font-size:.6em}
+.fv-pt .l3 .w b{font-family:var(--en);font-weight:700;font-size:1.15em;color:var(--blue)}
+.fv-pt .nt{white-space:nowrap;font-size:clamp(12px,3.4vw,15px);color:var(--ink-2);margin-top:10px}
+.fv-body{position:relative;z-index:3;padding:0 20px 56px;text-align:center}
+.fv-lead{font-weight:700;font-size:clamp(16px,4.6vw,24px);line-height:1.6;letter-spacing:.02em}
+.fv-copy{margin-top:10px;font-weight:900;font-size:clamp(28px,8vw,46px);line-height:1.5;letter-spacing:.04em;text-shadow:0 3px 0 var(--navy)}
+.fv-copy em{font-style:normal;color:var(--yellow)}
+.fv-cta{margin-top:30px}
+.fv-cta .vote-note,.last .vote-note{color:rgba(255,255,255,.88)}
+
+/* ---------- 投票アニメ：透明なアクリル投票箱に、カードがストンと落ちて積み重なる ---------- */
+.stage{position:relative;z-index:3;height:330px;margin-top:8px}
+.bx{position:absolute;left:50%;bottom:10px;width:240px;height:230px;margin-left:-120px;transform-origin:50% 100%;animation:bump 5s ease-in-out infinite}
+@keyframes bump{0%,50%,100%{transform:scale(1)}54%{transform:scale(1.05,.94)}59%{transform:scale(.98,1.03)}64%{transform:scale(1)}}
+.bx svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.bx .front{z-index:3}
+/* カード（ななぷれのニコちゃんマーク入りの投票用紙） */
+.card{position:absolute;left:97px;top:0;z-index:2;width:46px;height:60px;background:#fff;border-radius:4px;box-shadow:0 4px 8px rgba(0,0,0,.25);animation:card 5s infinite}
+.card img{width:36px;margin:8px auto 0}
+.card b{display:block;text-align:center;font-family:var(--en);font-weight:700;font-size:8px;letter-spacing:.12em;color:var(--blue);margin-top:4px;line-height:1}
+.card i{display:block;width:26px;height:2px;margin:4px auto 0;background:var(--pink);border-radius:2px}
+@keyframes card{
+  0%{transform:translateY(-110px) rotate(-12deg);opacity:0;animation-timing-function:ease-out}
+  10%{opacity:1}
+  22%{transform:translateY(-78px) rotate(5deg);animation-timing-function:ease-in-out}
+  32%{transform:translateY(-84px) rotate(0)}
+  36%{transform:translateY(-84px) rotate(0);animation-timing-function:cubic-bezier(.5,0,.9,.6)}
+  50%{transform:translateY(144px) rotate(0);animation-timing-function:ease-out}
+  54%{transform:translateY(136px) rotate(-4deg);animation-timing-function:ease-in}
+  58%,88%{transform:translateY(144px) rotate(-6deg);opacity:1}
+  100%{transform:translateY(144px) rotate(-6deg);opacity:0}
+}
+/* 着地の瞬間、アクリルがピカッ */
+.flash{opacity:0;animation:flash 5s infinite}
+@keyframes flash{0%,49%{opacity:0}52%{opacity:.85}70%,100%{opacity:0}}
+.burst{position:absolute;left:50%;bottom:188px;z-index:5;width:0;height:0}
+.burst i{position:absolute;left:0;top:0;width:var(--w,10px);height:var(--h,16px);margin:calc(var(--h,16px) / -2) 0 0 calc(var(--w,10px) / -2);background:var(--c);border-radius:2px;opacity:0;animation:burst 5s linear infinite}
+.burst i.st{background:var(--img) center/contain no-repeat;border-radius:0}
+@keyframes burst{0%,50%{opacity:0;transform:translate(0,0) scale(.3) rotate(0);animation-timing-function:cubic-bezier(.08,.8,.25,1)}52%{opacity:1}84%{opacity:1;animation-timing-function:linear}100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(1) rotate(var(--br))}}
+
+/* ---------- ありがとうございます（数字） ---------- */
+.stats{position:relative;padding:70px 0 64px;background:radial-gradient(circle,rgba(54,197,230,.22) 2px,transparent 2.5px) 0 0/22px 22px,var(--aqua-l)}
+.stats .msg{text-align:center;font-weight:700;font-size:18px;line-height:2;margin:-8px 0 30px}
+.stats .msg b{color:var(--blue)}
+.num-grid{display:grid;gap:16px}
+.num{position:relative;background:#fff;border:3px solid var(--navy);border-radius:20px;padding:24px 10px 20px;text-align:center;line-height:1.4;box-shadow:0 7px 0 var(--navy)}
+.num .k{display:inline-block;font-weight:900;font-size:17px;color:#fff;background:var(--blue);border-radius:999px;padding:2px 16px}
+.num .v{display:block;margin-top:8px;white-space:nowrap;font-family:var(--en);font-weight:700;font-size:clamp(58px,17vw,84px);line-height:1;color:var(--blue);text-shadow:4px 4px 0 var(--yellow)}
+.num .v small{font-family:var(--sans);font-size:.34em;font-weight:900;color:var(--ink);text-shadow:none;margin-left:.1em}
+.num .v .st{color:var(--yellow-d);text-shadow:none;font-size:.7em;margin-right:.08em}
+.stats .nt{margin-top:18px;text-align:center;font-size:15px;color:var(--ink-2)}
+
+/* ---------- お手紙（エアメール風） ---------- */
+.letter-sec{padding:66px 16px 70px}
+.letter{position:relative;background:#fff;padding:12px}
+.letter::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,var(--blue) 0 14px,#fff 14px 22px,var(--pink) 22px 36px,#fff 36px 44px);border-radius:8px}
+.letter-in{position:relative;background:#fff;border-radius:4px;padding:34px 20px 34px}
+.letter .stamp{position:absolute;right:14px;top:14px;width:78px;height:92px;padding:6px;background:var(--aqua-l);border:2px dashed var(--blue);transform:rotate(6deg)}
+.letter .stamp img{width:100%;margin-top:10px}
+.letter .stamp b{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:var(--en);font-weight:700;font-size:10px;letter-spacing:.08em;color:var(--blue)}
+.letter h3{font-family:var(--en);font-weight:700;font-size:40px;line-height:1;letter-spacing:.06em;color:var(--blue)}
+.letter h3 small{display:block;font-family:var(--sans);font-weight:700;font-size:16px;letter-spacing:.1em;color:var(--ink-2);margin-top:10px}
+.letter .body{margin-top:30px}
+.letter p{font-size:18px;font-weight:500;line-height:2.05}
+.letter p+p{margin-top:1.1em}
+.letter .to{font-size:19px;font-weight:900;color:var(--pink)}
+.letter mark{background:linear-gradient(transparent 62%,var(--yellow) 62%);color:inherit}
+.letter .sign{margin-top:1.6em;text-align:right;font-weight:700}
+.letter .sign small{display:block;font-size:16px;font-weight:500;color:var(--ink-2)}
+
+/* ---------- ななぷれの自慢 ---------- */
+.good{padding:70px 0 66px;background:#fff}
+.pts{display:grid;gap:30px}
+.pt{position:relative;border:3px solid var(--navy);border-radius:20px;background:#fff;padding:40px 20px 24px;box-shadow:0 7px 0 var(--navy)}
+.pt .no{position:absolute;left:18px;top:-26px;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--pink);color:#fff;border:3px solid var(--navy);font-family:var(--en);font-weight:700;font-size:24px;line-height:1}
+.pt:nth-child(2) .no{background:var(--blue)}
+.pt:nth-child(3) .no{background:var(--yellow);color:var(--navy)}
+.pt .en{display:block;font-weight:600;font-size:16px;letter-spacing:.2em;color:var(--blue)}
+.pt h3{font-weight:900;font-size:clamp(21px,6vw,26px);line-height:1.5;margin-top:2px}
+.pt h3 .mk{background:linear-gradient(transparent 62%,var(--yellow) 62%)}
+.pt p{font-size:17px;color:var(--ink-2);line-height:1.85;margin-top:10px}
+
+/* ---------- 人気ランキング ---------- */
+.rank{padding:70px 0 64px;background:var(--paper)}
+.upd{display:block;margin-top:10px;font-size:15px;color:var(--ink-2)}
+.rk-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 14px}
+.rk{position:relative;display:block}
+.rk .ph{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;background:#fff;border:2px solid var(--line);border-radius:14px}
+.rk .ph img{width:100%;height:100%;object-fit:contain;transition:transform .6s}
+.rk:hover .ph img{transform:scale(1.05)}
+.rk .no{position:absolute;left:-6px;top:-10px;z-index:2;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;border:3px solid #fff;font-family:var(--en);font-weight:700;font-size:20px;line-height:1;box-shadow:0 3px 8px rgba(0,0,0,.2)}
+.rk:nth-child(1) .no{background:linear-gradient(160deg,#ffe57a,#e8a800)}
+.rk:nth-child(2) .no{background:linear-gradient(160deg,#eef2f7,#9aa8ba)}
+.rk:nth-child(3) .no{background:linear-gradient(160deg,#f3c49b,#b8732f)}
+.rk:nth-child(-n+3) .no::before{content:"";position:absolute;top:-14px;left:50%;width:22px;height:14px;margin-left:-11px;background:var(--yellow);clip-path:polygon(0 100%,0 20%,25% 60%,50% 0,75% 60%,100% 20%,100% 100%)}
+.rk .br{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--blue);border:1.5px solid var(--blue);border-radius:999px;padding:0 10px;line-height:1.7}
+.rk h4{font-size:16px;font-weight:700;line-height:1.55;margin-top:6px}
+.rk .price{font-family:var(--en);font-weight:700;font-size:21px;color:var(--pink);margin-top:2px}
+.rk .price small{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink-2)}
+.price-nt{margin-top:16px;font-size:14px;color:var(--ink-2);text-align:right}
+.links{margin-top:44px}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:66px;padding:0 26px;background:var(--blue);color:#fff;border-radius:999px;font-weight:700;font-size:18px;letter-spacing:.06em;border:3px solid var(--navy);box-shadow:0 5px 0 var(--navy);transition:background .25s}
+.btn::after{content:"→";font-family:var(--en);color:var(--yellow);font-size:22px}
+.btn:hover{background:var(--blue-d)}
+
+/* ---------- 投票方法 ---------- */
+.how{padding:70px 0 64px;background:#fff}
+.steps{position:relative;display:grid;gap:22px}
+.steps::before{content:"";position:absolute;left:35px;top:20px;bottom:20px;border-left:3px dashed var(--aqua)}
+.steps li{position:relative;list-style:none;display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center}
+.steps .sn{display:grid;place-items:center;width:72px;height:72px;border-radius:50%;background:var(--blue);color:#fff;border:3px solid var(--navy);font-family:var(--en);font-weight:600;font-size:12px;letter-spacing:.14em;line-height:1;text-align:center}
+.steps .sn b{display:block;font-weight:700;font-size:30px;letter-spacing:0;margin-top:2px}
+.steps li:nth-child(2) .sn{background:var(--pink)}
+.steps li:nth-child(3) .sn{background:var(--yellow);color:var(--navy)}
+.steps .tx{background:var(--paper);border-radius:16px;padding:16px 18px}
+.steps h3{font-size:19px;font-weight:900;line-height:1.5}
+.steps p{font-size:17px;color:var(--ink-2);line-height:1.7;margin-top:2px}
+
+/* ---------- 声 ---------- */
+.voice{padding:70px 0 64px;background:var(--aqua-l)}
+.bubbles{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bb{position:relative;display:flex;align-items:center;justify-content:center;min-height:96px;background:#fff;border:3px solid var(--navy);border-radius:22px;padding:12px 14px;font-weight:700;font-size:17px;line-height:1.6;text-align:center}
+.bb::after{content:"";position:absolute;bottom:-14px;left:30px;width:20px;height:14px;background:var(--navy);clip-path:polygon(0 0,100% 0,20% 100%)}
+.bb:nth-child(even)::after{left:auto;right:30px;transform:scaleX(-1)}
+.bb:nth-child(4n+1){background:#fff7d6}
+.bb:nth-child(4n+4){background:#ffe8f0}
+.voice .after{text-align:center;margin-top:36px;font-size:18px;line-height:2}
+
+/* ---------- 締め ---------- */
+.last{padding:66px 20px 70px;text-align:center}
+.last>*{position:relative;z-index:3}
+.last .mark{width:120px;margin:0 auto}
+.last .big{margin-top:12px;font-family:var(--en);font-weight:700;font-size:clamp(46px,13.4vw,92px);line-height:1;letter-spacing:.02em;color:var(--yellow);text-shadow:0 5px 0 var(--navy)}
+.last h2{font-weight:900;font-size:clamp(26px,7.4vw,38px);line-height:1.55;letter-spacing:.04em;margin:20px 0 30px;text-shadow:0 3px 0 var(--navy)}
+.last h2 em{font-style:normal;color:var(--yellow)}
+
+/* ---------- 追従ボタン ---------- */
+.fixed{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(12px + env(safe-area-inset-bottom));background:rgba(11,42,92,.94);transform:translateY(110%);transition:transform .35s}
+.fixed.on{transform:none}
+.fixed .vote{min-height:58px;box-shadow:0 3px 0 var(--yellow-d)}
+
+@media (min-width:768px){
+  .in{padding:0 56px}
+  .fv-bar img{width:180px}
+  .fv-pts{padding:30px 56px 0}
+  .fv-body{padding:0 56px 70px}
+  .num-grid{grid-template-columns:1fr 1fr}
+  .letter-sec{padding:72px 56px 76px}
+  .letter-in{padding:46px 46px 44px}
+  .letter p{font-size:19px}
+  .rk-grid{grid-template-columns:repeat(4,1fr)}
+  .bubbles{grid-template-columns:1fr 1fr}
+  .bb{font-size:18px}
+  .fixed{display:none}
+  .wrap{padding-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .vote.np-shine-play::after,.ticker .row,.bx,.card,.flash{animation:none}
+  .confetti,.burst{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="ticker" aria-hidden="true"><div class="row" data-tick="RAKUTEN SHOP OF THE YEAR 2026|VOTE NOW|投票受付中|腕時計のななぷれ"></div></div>
+
+  <!-- ===== FV ===== -->
+  <header class="fv sun" id="fv">
+    <div class="confetti" data-confetti="46"></div>
+    <div class="fv-bar"><a href="https://www.rakuten.co.jp/nanaple/" target="_blank" rel="noopener"><img src="images/logo-white.png" alt="腕時計のななぷれ" width="520" height="467"></a></div>
+    <div class="fv-head">
+      <p class="soy">RAKUTEN</p>
+      <p class="soy-big">SHOP OF THE YEAR</p>
+      <p class="year">2026</p>
+      <h1 class="fv-title">投票受付中</h1>
+      <p class="fv-dl">投票は<b>11.30</b>(月)09:59まで</p>
+    </div>
+    <div class="fv-pts">
+      <div class="fv-pt">
+        <p class="l1">あなたの1票でベストショップが決まる！</p>
+        <p class="l2">お気に入りのショップに投票すると</p>
+        <p class="l3"><span class="w">最大<span class="p">10,000<small>ポイント</small></span>！</span><span class="w">合計<b>10</b>万名様に当たる！</span></p>
+        <p class="nt">※詳細は楽天市場の投票ページをご確認ください</p>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="burst" data-burst="22"></div>
+      <div class="bx">
+        <!-- 奥側：背面・左右・天面の奥半分・中に積もったカード -->
+        <svg class="back" viewBox="0 0 240 230">
+          <ellipse cx="120" cy="224" rx="112" ry="6" fill="rgba(0,0,0,.28)"/>
+          <rect x="40" y="40" width="160" height="150" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+          <polygon points="20,64 40,40 40,190 20,214" fill="rgba(255,255,255,.14)" stroke="rgba(255,255,255,.6)" stroke-width="1.5"/>
+          <polygon points="220,64 200,40 200,190 220,214" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.6)" stroke-width="1.5"/>
+          <polygon points="40,40 200,40 210,52 30,52" fill="#0b2a5c"/>
+          <rect x="78" y="49" width="84" height="5" rx="2.5" fill="#061633"/>
+          <!-- 中に積もったカード -->
+          <g stroke="rgba(16,34,63,.15)" stroke-width="1">
+            <rect x="34" y="196" width="60" height="14" rx="2" fill="#ffffff" transform="rotate(-4 64 203)"/>
+            <rect x="86" y="198" width="60" height="14" rx="2" fill="#fff7d6" transform="rotate(3 116 205)"/>
+            <rect x="140" y="196" width="60" height="14" rx="2" fill="#ffe8f0" transform="rotate(-2 170 203)"/>
+            <rect x="58" y="186" width="60" height="14" rx="2" fill="#dff6fc" transform="rotate(6 88 193)"/>
+            <rect x="118" y="186" width="60" height="14" rx="2" fill="#ffffff" transform="rotate(-7 148 193)"/>
+          </g>
+        </svg>
+        <div class="card"><img src="images/mark-color.png" alt=""><b>VOTE</b><i></i></div>
+        <!-- 手前側：正面のアクリル・天面の手前半分・台座 -->
+        <svg class="front" viewBox="0 0 240 230">
+          <rect x="20" y="64" width="200" height="150" fill="rgba(190,232,255,.2)" stroke="#ffffff" stroke-width="2.5"/>
+          <rect class="flash" x="20" y="64" width="200" height="150" fill="#ffffff"/>
+          <polygon points="38,72 70,72 34,206 22,206 22,140" fill="rgba(255,255,255,.28)"/>
+          <polygon points="82,72 96,72 52,206 40,206" fill="rgba(255,255,255,.18)"/>
+          <polygon points="30,52 210,52 220,64 20,64" fill="#16438a"/>
+          <rect x="20" y="64" width="200" height="8" fill="#0b2a5c"/>
+          <rect x="12" y="212" width="216" height="12" rx="3" fill="#0b2a5c"/>
+          <rect x="20" y="70" width="200" height="3" fill="#ffd23f"/>
+          <g transform="translate(184 104) rotate(10)">
+            <circle r="27" fill="#ffd23f" stroke="#0b2a5c" stroke-width="3"/>
+            <text y="-2" text-anchor="middle" font-family="Jost,sans-serif" font-weight="700" font-size="14" letter-spacing="1" fill="#0b2a5c">VOTE</text>
+            <text y="12" text-anchor="middle" font-family="Jost,sans-serif" font-weight="700" font-size="10" letter-spacing="1" fill="#ff4f8b">2026</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="fv-body">
+      <p class="fv-lead">いつも腕時計のななぷれを<br>ご利用いただきありがとうございます</p>
+      <p class="fv-copy"><em>腕時計のななぷれ</em>に<br>あなたの一票を</p>
+      <div class="fv-cta">
+        <a class="vote" data-vote href="#">腕時計のななぷれに投票する<span class="arw">▶</span></a>
+        <p class="vote-note">楽天市場の投票ページが開きます<br>投票期間：2026年11月1日(日)〜11月30日(月)09:59</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker rev" aria-hidden="true"><div class="row" data-tick="THANK YOU FOR 89,760 REVIEWS|★4.82|いつもありがとうございます"></div></div>
+
+  <!-- ===== ありがとうございます ===== -->
+  <section class="stats">
+    <div class="in">
+      <div class="head">
+        <span class="tag">THANK YOU</span>
+        <h2><span class="mk">ありがとうございます</span></h2>
+      </div>
+      <p class="msg">総レビュー件数は<b>8万件超</b><br>たくさんのお客様に支えていただいて<br>今のななぷれがあります</p>
+      <div class="num-grid">
+        <p class="num"><span class="k">ショップ評価</span><span class="v"><span class="st">★</span>4.82</span></p>
+        <p class="num"><span class="k">いただいたレビュー</span><span class="v">89,760<small>件</small></span></p>
+      </div>
+      <p class="nt">※ショップ評価・レビュー件数は<br>2026年11月2日時点</p>
+    </div>
+  </section>
+
+  <!-- ===== お手紙 ===== -->
+  <section class="letter-sec">
+    <div class="letter">
+      <div class="letter-in">
+        <div class="stamp" aria-hidden="true"><img src="images/mark-color.png" alt=""><b>nanaple</b></div>
+        <h3>LETTER<small>お客様へのお手紙</small></h3>
+        <div class="body">
+          <p class="to">お客様へ</p>
+          <p>いつも腕時計のななぷれをご利用いただき、ありがとうございます。</p>
+          <p>ななぷれは、<mark>お気に入りの一本との出会い</mark>をお手伝いしたいという思いで、セイコーやシチズン、カシオなどの腕時計をはじめ、ファッション小物もそろえてきました。</p>
+          <p>選ぶ時間も、届く瞬間も、身につける毎日も、そのすべてが心地よい体験になりますように。これからもスタッフ一同、心を込めてお届けします。</p>
+          <p>今年も楽天市場「ショップ・オブ・ザ・イヤー」の投票が始まりました。腕時計のななぷれに、あなたの一票をお寄せいただけますと幸いです。</p>
+          <p class="sign"><small>2026年11月</small>腕時計のななぷれ スタッフ一同</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ななぷれの自慢 ===== -->
+  <section class="good">
+    <div class="in">
+      <div class="head">
+        <span class="tag">OUR PRIDE</span>
+        <h2>ななぷれの<br><span class="mk">うれしいポイント</span></h2>
+        <p class="lead">選ぶときも、届いてからも<br>ずっと安心してお使いいただけるように</p>
+      </div>
+      <div class="pts">
+        <article class="pt">
+          <span class="no">01</span>
+          <span class="en">WARRANTY</span><h3>うれしい<span class="mk">7年保証</span></h3><p>ななぷれの延長保証で、お気に入りの一本を長く安心してお使いいただけます。</p>
+        </article>
+        <article class="pt">
+          <span class="no">02</span>
+          <span class="en">SERVICE</span><h3>名入れ・ベルト調整・<br>ラッピング</h3><p>刻印での名入れやサイズ調整、ギフトラッピングも。記念日や贈りものにもご利用いただけます。</p>
+        </article>
+        <article class="pt">
+          <span class="no">03</span>
+          <span class="en">SUPPORT</span><h3>スタッフがていねいに対応</h3><p>平日9:00〜17:00のお問い合わせは、当日中にご返信。大阪・堺には実店舗もございます。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 投票方法 ===== -->
+  <section class="how">
+    <div class="in">
+      <div class="head">
+        <span class="tag">HOW TO VOTE</span>
+        <h2>投票はかんたん<br><span class="mk">3ステップ</span></h2>
+      </div>
+      <ol class="steps">
+        <li><span class="sn">STEP<b>1</b></span><div class="tx"><h3>投票ボタンをタップ</h3><p>このページの投票ボタンから、楽天市場の投票ページへ</p></div></li>
+        <li><span class="sn">STEP<b>2</b></span><div class="tx"><h3>楽天会員でログイン</h3><p>お持ちの楽天会員IDでログインしてください</p></div></li>
+        <li><span class="sn">STEP<b>3</b></span><div class="tx"><h3>投票＆応援メッセージ</h3><p>腕時計のななぷれに一票と、ひとことメッセージを</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== お声 ===== -->
+  <section class="voice">
+    <div class="in">
+      <div class="head">
+        <span class="tag">YOUR VOICE</span>
+        <h2>皆さまのお声を<br><span class="mk">お聞かせください</span></h2>
+        <p class="lead">投票ページの応援メッセージ欄に<br>ひとことお寄せいただけるとうれしいです</p>
+      </div>
+      <div class="bubbles">
+        <p class="bb">届くのが早くて<br>うれしかった</p>
+        <p class="bb">プレゼントに<br>喜ばれました</p>
+        <p class="bb">名入れが<br>きれいでした</p>
+        <p class="bb">これからも<br>応援しています</p>
+      </div>
+      <p class="after">いただいたご意見や温かいメッセージは<br>スタッフ一同の大きな励みになります</p>
+    </div>
+  </section>
+
+  <!-- ===== 締め ===== -->
+  <section class="last sun" id="last">
+    <div class="confetti" data-confetti="30"></div>
+    <img class="mark" src="images/mark-white.png" alt="" aria-hidden="true">
+    <p class="big" aria-hidden="true">THANK YOU!</p>
+    <h2><em>腕時計のななぷれ</em>に<br>あなたの一票を</h2>
+    <a class="vote" data-vote href="#">腕時計のななぷれに投票する<span class="arw">▶</span></a>
+    <p class="vote-note">投票は11月30日（月）09:59まで<br>投票すると最大10,000ポイント！<br>合計10万名様に当たる！</p>
+  </section>
+
+  <!-- ===== 人気ランキング ===== -->
+  <section class="rank">
+    <div class="in">
+      <div class="head">
+        <span class="tag">RANKING</span>
+        <h2>ななぷれの<br><span class="mk">人気ランキング</span></h2>
+        <span class="upd">11/2更新（10/26〜11/1集計）</span>
+      </div>
+      <div class="rk-grid">
+        <a class="rk" href="https://item.rakuten.co.jp/nanaple/vivien-muffler-2026/" target="_blank" rel="noopener"><span class="no">1</span><span class="ph"><img src="images/vivien-muffler-2026.jpg" alt="ヴィヴィアン・ウエストウッド マフラー" loading="lazy"></span><span class="br">Vivienne Westwood</span><h4>ヴィヴィアン・ウエストウッド ロゴ マフラー</h4><p class="price">13,340<small>円〜</small></p></a>
+        <a class="rk" href="https://item.rakuten.co.jp/nanaple/seiko-sbth2/" target="_blank" rel="noopener"><span class="no">2</span><span class="ph"><img src="images/seiko-sbth2.jpg" alt="セイコーセレクション デイデイト Sシリーズ" loading="lazy"></span><span class="br">SEIKO</span><h4>セイコーセレクション デイデイト Sシリーズ</h4><p class="price">26,400<small>円〜</small></p></a>
+        <a class="rk" href="https://item.rakuten.co.jp/nanaple/sbtr021/" target="_blank" rel="noopener"><span class="no">3</span><span class="ph"><img src="images/sbtr021.jpg" alt="セイコー セレクション スピリット 8Tクロノ" loading="lazy"></span><span class="br">SEIKO</span><h4>セイコー スピリット 8Tクロノ SBTR</h4><p class="price">20,900<small>円〜</small></p></a>
+        <a class="rk" href="https://item.rakuten.co.jp/nanaple/mq-24/" target="_blank" rel="noopener"><span class="no">4</span><span class="ph"><img src="images/mq-24.jpg" alt="チープカシオ MQ-24" loading="lazy"></span><span class="br">CASIO</span><h4>チープカシオ 海外モデル MQ-24</h4><p class="price">1,900<small>円〜</small></p></a>
+        <a class="rk" href="https://item.rakuten.co.jp/nanaple/mech-szsb-ss/" target="_blank" rel="noopener"><span class="no">5</span><span class="ph"><img src="images/mech-szsb-ss.jpg" alt="セイコー メカニカル ネット流通限定モデル" loading="lazy"></span><span class="br">SEIKO</span><h4>セイコー メカニカル ネット流通限定モデル</h4><p class="price">58,300<small>円</small></p></a>
+        <a class="rk" href="https://item.rakuten.co.jp/nanaple/exam-casio1/" target="_blank" rel="noopener"><span class="no">6</span><span class="ph"><img src="images/exam-casio1.jpg" alt="名入れ＆電池交換セット チープカシオ MQ-24" loading="lazy"></span><span class="br">CASIO</span><h4>名入れ＆電池交換セット チープカシオ MQ-24</h4><p class="price">2,600<small>円〜</small></p></a>
+        <a class="rk" href="https://item.rakuten.co.jp/nanaple/sseh002/" target="_blank" rel="noopener"><span class="no">7</span><span class="ph"><img src="images/sseh002.jpg" alt="セイコーセレクション ナノ・ユニバース コラボ" loading="lazy"></span><span class="br">SEIKO</span><h4>セイコーセレクション ナノ・ユニバース コラボ</h4><p class="price">28,600<small>円</small></p></a>
+        <a class="rk" href="https://item.rakuten.co.jp/nanaple/sseh016/" target="_blank" rel="noopener"><span class="no">8</span><span class="ph"><img src="images/sseh016.jpg" alt="セイコーセレクション ナノ・ユニバース コラボ SSEH016" loading="lazy"></span><span class="br">SEIKO</span><h4>ナノ・ユニバース コラボ 流通限定 SSEH016</h4><p class="price">39,600<small>円</small></p></a>
+      </div>
+      <p class="price-nt">※順位・価格は2026年11月2日時点</p>
+      <div class="links">
+        <a class="btn" href="https://www.rakuten.co.jp/nanaple/" target="_blank" rel="noopener">腕時計のななぷれ トップへ</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- スマホ追従ボタン -->
+<div class="fixed" id="fixed"><a class="vote" data-vote href="#">腕時計のななぷれに投票する<span class="arw">▶</span></a></div>
+
+<script>
+(function(){
+  // ▼投票ページURL（ここだけ変えれば全ボタンに反映。s= は楽天のショップID 239356）
+  var VOTE_URL = 'https://award.rakuten.co.jp/?menu=shop&aid=101&l-id=SOY_fromshop&s=239356';
+  document.querySelectorAll('[data-vote]').forEach(function(a){
+    a.href = VOTE_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  // 流れる帯（同じ並びを2回入れて途切れずにループ）
+  document.querySelectorAll('[data-tick]').forEach(function(row){
+    var words = row.dataset.tick.split('|'), html = '';
+    for (var k = 0; k < 4; k++) words.forEach(function(w){ html += '<span>' + w + '</span>'; });
+    row.innerHTML = html + html;
+  });
+
+  // 投票ボタンのシャイン（ランダム間隔）
+  function shine(){
+    document.querySelectorAll('.vote').forEach(function(b){
+      b.classList.remove('np-shine-play');
+      void b.offsetWidth;
+      b.classList.add('np-shine-play');
+    });
+    setTimeout(shine, 2600 + Math.random() * 3000);
+  }
+  setTimeout(shine, 1200);
+
+  var COLORS = ['#ffd23f', '#ff4f8b', '#36c5e6', '#ffffff', '#7ee0a8'];
+
+  // 上からパラパラ降る紙吹雪（落ちる距離はコンテナの高さに合わせる）
+  document.querySelectorAll('[data-confetti]').forEach(function(box){
+    var h = box.offsetHeight + 60;
+    for (var i = 0; i < +box.dataset.confetti; i++) {
+      var f = document.createElement('i'), w = 6 + Math.random() * 6;
+      f.style.cssText = 'left:' + (Math.random() * 100) + '%;--w:' + w + 'px;--h:' + (w * (1.3 + Math.random() * 0.8)) + 'px;--c:' + COLORS[i % COLORS.length] +
+        ';--dx:' + (Math.random() * 80 - 40) + 'px;--fall:' + h + 'px;--r:' + (360 + Math.random() * 540) + 'deg' +
+        ';animation-duration:' + (7 + Math.random() * 7) + 's;animation-delay:' + (-Math.random() * 14) + 's';
+      box.appendChild(f);
+    }
+  });
+
+  // カードが箱に落ちた瞬間、投入口からはじける紙吹雪と星
+  function star(c){ return 'url("data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1.5l2.6 7.9 8.4.1-6.8 5 2.6 8-6.8-4.9-6.8 4.9 2.6-8L.8 9.5l8.4-.1z" fill="' + c + '"/></svg>') + '")'; }
+  document.querySelectorAll('[data-burst]').forEach(function(box){
+    var n = +box.dataset.burst;
+    for (var i = 0; i < n; i++) {
+      var b = document.createElement('i'), ang = -Math.PI * (0.05 + 0.9 * (i + Math.random() * 0.6) / n), r = 130 + Math.random() * 90, isStar = i % 4 === 0;
+      if (isStar) { b.className = 'st'; b.style.cssText = '--img:' + star(i % 8 === 0 ? '#ffd23f' : '#ffffff') + ';--w:22px;--h:22px'; }
+      else { var w = 7 + Math.random() * 5; b.style.cssText = '--c:' + COLORS[i % COLORS.length] + ';--w:' + w + 'px;--h:' + (w * 1.6) + 'px'; }
+      b.style.cssText += ';--bx:' + (Math.cos(ang) * r * 1.2) + 'px;--by:' + (Math.sin(ang) * r * 0.8) + 'px;--br:' + (Math.random() * 360 - 180) + 'deg';
+      box.appendChild(b);
+    }
+  });
+
+  // FVを過ぎたら追従ボタン表示（締めの投票ボタンが見えている間は隠す）
+  var fixed = document.getElementById('fixed'), shown = {};
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ shown[e.target.id] = e.isIntersecting; });
+    fixed.classList.toggle('on', !shown.fv && !shown.last);
+  });
+  io.observe(document.getElementById('fv'));
+  io.observe(document.getElementById('last'));
+})();
+</script>
+</body>
+</html>
